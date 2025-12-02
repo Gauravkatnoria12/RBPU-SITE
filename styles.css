@@ -26,6 +26,9 @@
             }
 
             nav .logo {
+                position: fixed;
+                top: 10px;
+                left: 10px;
                 color: #000000;
                 border: 0px;
             }
@@ -38,9 +41,10 @@
 
             nav ul {
                 display: flex;
+                position: absolute;
+                right: 40px;
                 list-style: none;
-                gap: 40px;
-                float: left;
+                gap: 50px;
             }
 
             nav ul li a {
@@ -58,6 +62,66 @@
                 padding: 9px;
                 border-radius: 5px;
                 animation: fadeInUp 1s;
+            }
+
+            .menu {
+                display: none;
+                font-size: 0px;
+            }
+
+            .material-symbols-outlined {
+                font-variation-settings:
+                    'FILL' 0,
+                    'wght' 400,
+                    'GRAD' 0,
+                    'opsz' 24
+            }
+
+
+            .menu-items {
+                display: none;
+                position: absolute;
+                right: 0px;
+                top: 60px;
+                height: 300px;
+                width: 170px;
+                text-align: center;
+                background-color: #f2f2f2;
+                box-shadow: 1px 1px 8px rgba(0, 0, 0, .5);
+            }
+
+            .menu-items a {
+                text-decoration: none;
+            }
+
+            .menu-items a li {
+                padding: 10px 8px;
+                text-align: center;
+                font-size: 18px;
+                color: #333;
+                font-weight: bold;
+            }
+
+            .menu-items .menuu {
+                position: relative;
+                top: 10px;
+                left: 1px;
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                padding: 20px;
+                font-size: 20px;
+                list-style: none;
+                color: black;
+            }
+
+            .menu:hover .menu-items {
+                display: block;
+            }
+
+            .menu-items a li:hover {
+                background-color: #e2e2e2;
+                border-radius: 5px;
             }
 
 
@@ -86,7 +150,7 @@
             }
 
             .main-content p {
-                font-size: 25px;
+                font-size: 30px;
                 font-weight: 600;
                 margin-bottom: 30px;
                 animation: fadeInUp 1.2s;
@@ -703,7 +767,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    padding: 8px 0%;
+                    text-align: end;
                     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
                     position: sticky;
                     top: 0;
@@ -725,8 +789,23 @@
                 }
 
                 nav ul {
-                    margin-left: 90px;
-                    gap: 24px;
+                    display: none;
+                }
+
+                .menu {
+                    display: inline-block;
+                    position: fixed;
+                    right: 0px;
+                    top: 0px;
+                    font-size: 20px;
+                    height: 60px;
+                    width: 70px;
+                    text-align: center;
+                    background-color: rgb(15, 25, 72);
+                    color: white;
+                    cursor: pointer;
+                    padding: 15px;
+                    font-weight: 500;
                 }
 
                 .main {
@@ -739,7 +818,7 @@
                 }
 
                 .main-content p {
-                    font-size: 16px;
+                    font-size: 20px;
                 }
 
                 .main-btn {
@@ -760,16 +839,6 @@
                     width: 50px;
                 }
 
-                nav ul li a {
-                    font-weight: 600;
-                    font-size: 14px;
-                }
-
-                nav ul li a:hover {
-                    font-weight: 600;
-                    font-size: 16px;
-                }
-
 
                 .leadership {
                     flex-direction: column;
@@ -780,19 +849,6 @@
             @media (max-width : 430px) {
                 .main h1 {
                     font-size: 26px;
-                }
-
-                nav ul {
-                    margin-left: 5px;
-                    gap: 8px;
-                }
-
-                nav ul li {
-                    padding-right: 5px;
-                }
-
-                .main .main-p {
-                    font-size: 12px;
                 }
 
                 footer .social i {
@@ -820,41 +876,60 @@
                 }
             }
 
-                @media (max-width : 320px) {
-                    .main h1 {
-                        font-size: 26px;
-                    }
+            @media (max-width : 320px) {
 
-                    nav ul {
-                        margin: 5px;
-                        gap: 0px;
-                    }
-
-                    nav ul li {
-                        font-size: 14px;
-                        padding-left: 5px;
-                    }
-
-                    nav ul li a:hover {
-                        font-size: 16px;
-                        font-weight: 600;
-                    }
-
-                    nav .logo img {
-                        height: 0px;
-                        width: 0px;
-                    }
-
-                    nav .logo {
-                        border: 0px;
-                        height: 0px;
-                        width: 0px;
-                    }
-
-                    .contact-content input,
-                    textarea,
-                    select {
-                        width: 100px;
-                    }
-
+                .course-row,
+                .campus-row,
+                .testimonial-row,
+                .facilities-row,
+                .stat {
+                    grid-template-columns: 1fr;
                 }
+
+                .main {
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                .main h1 {
+                    font-size: 28px;
+                }
+
+                .main-btn {
+                    width: 150px;
+                    font-size: 10px;
+                }
+
+                .main .main-p {
+                    font-size: 10px;
+                    font-weight: 500;
+                    margin-bottom: 35px;
+                }
+
+                .section-title {
+                    font-size: 24px;
+                }
+
+                .course-col h3 {
+                    font-size: 16px;
+                }
+
+
+                .contact-content input,
+                textarea,
+                select {
+                    width: 100px;
+                }
+
+                .course-col i {
+                    font-size: 28px;
+                }
+
+                .courses {
+                    padding: 40px 4%;
+                }
+
+                .menu {
+                    width: 60px;
+                }
+            }
