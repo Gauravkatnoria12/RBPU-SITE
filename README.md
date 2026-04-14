@@ -1,29 +1,26 @@
 # RBPU-SITE
 
-A dedicated web platform designed specifically for the students and community of Rayat Bahra Professional University (RBPU), Hoshiarpur. This site serves as a central hub for academic resources, university information, and campus updates, built with a focus on clean aesthetics and smooth user experience.
+A dedicated web platform designed for the students and community of Rayat Bahra Professional University (RBPU), Hoshiarpur. This site serves as a central hub for academic resources and campus information, built with a focus on clean design and accessibility.
 
 ## 🚀 Overview
 
-This project was born out of a need for a more streamlined, modern digital space for RBPU students. Whether you're looking for syllabus details, previous year question papers, or just want to keep up with campus events, this site brings it all under one roof with a high-performance frontend and a reliable backend.
+It is the front-end Project development journey of RBPU student.
 
 ## ✨ Key Features
 
-* **Academic Repository:** Easy access to course materials and semester-specific resources.
-* **Modern UI/UX:** A "premium" visual experience utilizing a sophisticated color palette (Cream, Dark Chocolate, and Gold) to reflect the university's prestige.
-* **Dynamic Transitions:** Smooth page transitions and interactive elements for a fluid browsing experience.
-* **Responsive Design:** Fully optimized for all devices, from desktop workstations to mobile phones.
-* **Real-time Interaction:** Integrated features for students to connect and stay updated.
+* **Academic Repository:** UI/UX.
+* **Fast Performance:** Lightweight and optimized for quick loading across all devices.
+* **Responsive Layout:** Fully accessible on mobile, tablets, and desktops.
+* **Interactive UI:** Smooth transitions and hover effects built with CSS.
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** HTML5, CSS3 (Custom Properties), JavaScript (ES6+)
-* **Animations:** GSAP & Barba.js for high-end motion design and seamless page loads.
-* **Backend:** Node.js / Express
-* **Database:** MongoDB (for real-time data handling)
+* **Structure:** HTML5
+* **Styling:** CSS3 (Custom properties, Flexbox, and Grid)
 
 ## 📦 Installation & Setup
 
-If you want to run this project locally, follow these steps:
+Since this is a frontend-focused project, you can get it running in seconds:
 
 1.  **Clone the repository**
     ```bash
@@ -33,37 +30,25 @@ If you want to run this project locally, follow these steps:
     ```bash
     cd RBPU-SITE
     ```
-3.  **Install dependencies**
-    ```bash
-    npm install
-    ```
-4.  **Set up Environment Variables**
-    Create a `.env` file in the root directory and add your MongoDB URI and port configuration:
-    ```env
-    PORT=3000
-    MONGO_URI=your_mongodb_connection_string
-    ```
-5.  **Run the application**
-    ```bash
-    npm start
-    ```
+3.  **Launch the site**
+    Simply open `index.html` in your preferred web browser, or use a "Live Server" extension if you're using VS Code.
 
 ## 🎨 Design Philosophy
 
-The project follows a theme of "Merging Artistry with Engineering." We believe that educational platforms don't have to be boring. By using creative libraries like Three.js and GSAP, we've turned a standard university site into an interactive experience that reflects the technical and creative growth of its students.
+The project follows the theme of **"Merging Artistry with Engineering."** By combining solid technical foundations with creative CSS styling, we've turned a standard university site into a more engaging experience for the student body.
 
 ## 🤝 Contributing
 
-Contributions are what make the community such an amazing place to learn and create.
+If you'd like to help improve the site:
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+2. Create your Feature Branch (`git checkout -b feature/NewResource`)
+3. Commit your Changes (`git commit -m 'Add new academic resource'`)
+4. Push to the Branch (`git push origin feature/NewResource`)
 5. Open a Pull Request
 
 ## 📧 Contact
 
-**Gaurav Katnoria** - [Your Email/LinkedIn Link]
+**Gaurav Katnoria** : [g200005k@gmail.com]
 Project Link: [https://github.com/Gauravkatnoria12/RBPU-SITE](https://github.com/Gauravkatnoria12/RBPU-SITE)
 
 ---
